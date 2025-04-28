@@ -68,3 +68,12 @@ This is a modern, responsive, and performant **Single Page Application (SPA)** s
 - Live demo hosted on  **[Netlify](https://eternalmartt.netlify.app/)**.
 - Local storage for cart and theme persistence.
 
+
+src/
+│
+├── features/          # Main pages (ProductList, ProductDetail, Checkout)
+├── shared/            # Reusable UI components, store
+├── infra/             # all api services
+├── core/              # utility functions and constant data
+└── App.tsx            # Root component with routing
+

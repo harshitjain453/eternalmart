@@ -406,24 +406,6 @@ const CartDrawer = ({ open, onClose }: any) => {
               <Box display="flex" gap={1}>
                 <Button
                   fullWidth
-                  variant="outlined"
-                  size="large"
-                  onClick={handleCheckout}
-                  sx={{
-                    py: 1.5,
-                    borderRadius: 2,
-                    fontWeight: 600,
-                    borderColor: alpha(theme.palette.primary.main, 0.5),
-                    "&:hover": {
-                      borderColor: theme.palette.primary.main,
-                      backgroundColor: alpha(theme.palette.primary.main, 0.05),
-                    },
-                  }}
-                >
-                  CHECKOUT
-                </Button>
-                <Button
-                  fullWidth
                   variant="contained"
                   size="large"
                   onClick={handleCart}
@@ -448,6 +430,24 @@ const CartDrawer = ({ open, onClose }: any) => {
                   }}
                 >
                   View Cart
+                </Button>
+                <Button
+                  fullWidth
+                  variant="outlined"
+                  size="large"
+                  onClick={handleCheckout}
+                  sx={{
+                    py: 1.5,
+                    borderRadius: 2,
+                    fontWeight: 600,
+                    borderColor: alpha(theme.palette.primary.main, 0.5),
+                    "&:hover": {
+                      borderColor: theme.palette.primary.main,
+                      backgroundColor: alpha(theme.palette.primary.main, 0.05),
+                    },
+                  }}
+                >
+                  CHECKOUT
                 </Button>
               </Box>
             </Box>

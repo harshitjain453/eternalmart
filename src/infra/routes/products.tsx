@@ -13,7 +13,12 @@ const OrderSummary = lazy(() => import("../../feature/order-success"));
 export const productRoutes = [
   {
     path: "/", // Redirect root to /product
-    element: <Navigate to={paths.productListing.allProducts} replace />,
+    // element: <Navigate to={paths.productListing.allProducts} replace />,
+    element: (
+      <ProductLayout>
+        <ProductListing />
+      </ProductLayout>
+    ),
   },
   {
     path: "product",
@@ -23,7 +28,7 @@ export const productRoutes = [
       </ProductLayout>
     ),
     children: [
-      { path: paths.productListing.allProducts, element: <ProductListing /> },
+      // { path: paths.productListing.allProducts, element: <ProductListing /> },
       { path: paths.productDetail.singleProduct, element: <ProductDetail /> },
     ],
   },

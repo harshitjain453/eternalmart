@@ -52,7 +52,7 @@ const ProductCardComponent = ({ product }: { product: Product }) => {
   const theme = useTheme();
 
   const handleNavigation = () => {
-    navigate(`${paths.productListing.allProducts}/${product?.id}`, {
+    navigate(`/product/${product?.id}`, {
       state: { product },
     });
   };

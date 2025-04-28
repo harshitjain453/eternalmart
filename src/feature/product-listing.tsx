@@ -122,26 +122,6 @@ const ProductListing = () => {
     },
   ];
 
-  // const scrollToProducts = () => {
-  //   const productsSection = document.getElementById("products-section");
-  //   if (productsSection) {
-  //     productsSection.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
-
-  // // Map category names to their respective imported images
-  // const getCategoryImage = (category: any) => {
-  //   const categoryImages = {
-  //     electronics: electronics,
-  //     jewelery: jewellary,
-  //     "men's clothing": mensclothing,
-  //     "women's clothing": womnesclothing,
-  //     all: all,
-  //   };
-  //   //@ts-ignore
-  //   return categoryImages[category] || all;
-  // };
-
   const filteredProducts = useMemo(() => {
     return (
       listings?.items?.filter((product) => {

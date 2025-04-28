@@ -1,6 +1,6 @@
 export const paths = {
     productListing: {
-        allProducts: "/product"
+        allProducts: "/"
 
     },
     productDetail: {

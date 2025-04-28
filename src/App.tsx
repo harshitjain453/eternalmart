@@ -8,6 +8,7 @@ import { lightTheme, darkTheme } from "./shared/theme/theme";
 import { useEffect } from "react";
 import { loadCartFromStorage } from "./shared/store/slice/cart/cart-slice";
 import { loadProductsFromStorage } from "./shared/store/slice/product/product-slice";
+import ScrollToTop from "./shared/components/common/scrolltop";
 
 function App() {
   const routes = useRoutes(productRoutes);
@@ -20,7 +21,10 @@ function App() {
     <div className="App">
       <ReduxProvider store={store}>
         <ThemeProvider>
-          <ThemedApp>{routes}</ThemedApp>
+          <ThemedApp>
+            <ScrollToTop />
+            {routes}
+          </ThemedApp>
         </ThemeProvider>
       </ReduxProvider>
     </div>

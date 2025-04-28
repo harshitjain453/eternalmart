@@ -1,54 +1,70 @@
-# React + TypeScript + Vite
+This is a modern, responsive, and performant **Single Page Application (SPA)** simulating a futuristic self-checkout experience for an automated retail store. Built with **React.js + TypeScript**, state management using **Redux Toolkit**, and animations powered by **Framer Motion**. The application fetches real-time product data from the **FakeStore API** and provides a seamless shopping and checkout flow.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Product Listing Page
+- Dynamic product fetching from **FakeStore API**.
+- Real-time search filtering without extra API calls.
+- Category-based filtering.
+- Smooth hover effects and UI animations.
 
-## Expanding the ESLint configuration
+### 2. Product Detail Page
+- Detailed view of selected products.
+- Display product image, title, description, price, and category.
+- Add to Cart directly from the product detail page.
+- Responsive and animated transitions for a smooth UX.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 3. Shopping Cart
+- Add/Remove items to/from the cart.
+- Real-time updates for cart item count and total price.
+- Local storage persistence for cart data (retains cart on refresh).
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 4. Checkout Flow
+- Multi-step form:
+  - **Step 1**: Shipping Details.
+  - **Step 2**: Payment Info.
+  - **Step 3**: Order Confirmation.
+- Form validation with smooth transitions and feedback.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 5. Dark Mode Toggle
+- Switch between dark and light themes.
+- User preference saved in local storage.
+- Smooth animated theme transitions.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🛠️ Tech Stack
+
+- **React.js** + **TypeScript**
+- **Redux Toolkit** for state management
+- **Framer Motion** for animations
+- **MUI (Material-UI)** for UI components and styling
+- **Vite** for fast builds and optimizations
+
+
+---
+
+## 📱 UI/UX Design
+
+- **Mobile-first** responsive design.
+- Minimal, sleek, and futuristic aesthetics.
+- Accessible: Compliant with **WCAG standards**.
+- Designed using **Figma** before development.
+
+---
+
+## ⚡ Performance Optimizations
+
+- Code splitting and lazy loading.
+- Memoization for avoiding unnecessary re-renders.
+- Lighthouse performance score: **90+**
+
+---
+
+## 🚀 Deployment
+
+- Live demo hosted on  **[Netlify](https://eternalmartt.netlify.app/)**.
+- Local storage for cart and theme persistence.
+

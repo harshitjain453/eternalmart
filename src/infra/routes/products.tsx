@@ -1,6 +1,6 @@
 import { lazy } from "react";
 import ProductLayout from "../../shared/layout/product";
-import { Navigate, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { paths } from "../../core/paths";
 
 // Lazy load components

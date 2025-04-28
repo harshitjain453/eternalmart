@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { paths } from "../../../core/paths";
+
 import { truncateText } from "../../../core/utils/helper";
 
 const cardVariants = {
